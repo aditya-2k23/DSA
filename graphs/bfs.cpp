@@ -27,6 +27,7 @@ void bfs(vector<int> adj[], int V, int s) {
                 q.push(v);
             }
     }
+    cout << endl;
 }
 
 void printList(vector<int> adj[], int V) {
@@ -73,7 +74,7 @@ int main() {
         return 1;
     }
 
-    cout << "BFS Traversal starting from vertex " << start << ": ";
+    cout << "BFS Traversal starting from vertex " << start << ": " << endl;
     bfs(adj, V, start);
 
     printList(adj, V);
