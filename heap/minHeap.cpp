@@ -34,8 +34,7 @@ public:
             return this;
         }
 
-        int i = size;
-        size++;
+        int i = size++;
         arr[i] = key;
 
         while (i != 0 && arr[parent(i)] > arr[i]) {
