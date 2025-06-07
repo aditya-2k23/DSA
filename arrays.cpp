@@ -4,17 +4,17 @@ using namespace std;
 int main() {
     // * Insertion: At the Beginning
 
-    int array[10] = {1, 2, 3, 4, 5};
-    int newElement = 7;
+    // int array[10] = {1, 2, 3, 4, 5};
+    // int newElement = 7;
 
-    for (int i = 5; i >= 1; i--) {
-        array[i] = array[i - 1];
-    }
-    array[0] = newElement;
+    // for (int i = 5; i >= 1; i--) {
+    //     array[i] = array[i - 1];
+    // }
+    // array[0] = newElement;
 
-    for (int i = 0; i < 6; i++) {
-        cout << array[i] << " ";
-    }
+    // for (int i = 0; i < 6; i++) {
+    //     cout << array[i] << " ";
+    // }
     // ? Output: 0 1 2 3 4 5
 
     // * Insertion: At the End
@@ -123,6 +123,18 @@ int main() {
         cout << mArr[i] << " ";
     } // ? Output: 1 2 3 4 5 6 7 8 9 10
     */
+
+    int n;
+    cin >> n;
+    int arr[n];
+
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+
+    for (int i = 0; i < n; i++) {
+        arr[i] *= 2;
+        cout << arr[i] << " ";
+    }
 
     return 0;
 }
